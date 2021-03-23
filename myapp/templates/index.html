@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block Body %}
+    <div class="container">
+    {% for posts in post %}
+    <div>
+      <a href="/post/{{posts.id}}" class="text-primary">{{posts.title}}</a>
+      {% endfor %}
+      </div>
+    </div>
+    
+
+{% endblock Body %}
